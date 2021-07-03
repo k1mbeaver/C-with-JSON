@@ -1,7 +1,7 @@
 {
-   "School" : "GnTech",
-   "address" : "KOR, GIMHAE",
-   "age" : 21,
-   "family" : [ "Father", "Mother", "Sister1", "Sister2" ],
-   "name" : "Kim"
+   "School" : "GnTEch",
+   "address" : "KOR",
+   "age" : 2,
+   "family" : [ "Father", "Mother", "Sister", "Broter" ],
+   "name" : "ksw"
 }

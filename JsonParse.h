@@ -4,6 +4,8 @@
 #include <iostream>
 #include <json\json.h>
 #include <fstream>
+#include "menu.h"
+
 using namespace std;
 
 class JsonParse {
@@ -13,7 +15,8 @@ public:
 	Json::Value family;
 	Json::Reader reader;
 	Json::StyledWriter writer;
+	Menu mymenu;
 
 	void makeJson();
-	void parseJson();
+	void parseJson(int nFamily);
 };

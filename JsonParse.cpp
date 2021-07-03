@@ -2,15 +2,14 @@
 
 void JsonParse::makeJson()
 {
-	root["name"] = "Kim";
-	root["age"] = 21;
-	root["address"] = "KOR, GIMHAE";
-	root["School"] = "GnTech";
-
+	root["name"] = "ksw";
+	root["age"] = 2;
+	root["address"] = "KOR";
+	root["School"] = "GnTEch";
 	family.append("Father");
 	family.append("Mother");
-	family.append("Sister1");
-	family.append("Sister2");
+	family.append("Sister");
+	family.append("Broter");
 	root["family"] = family;
 
 	str = writer.write(root);
@@ -23,7 +22,7 @@ void JsonParse::makeJson()
 	return;
 }
 
-void JsonParse::parseJson()
+void JsonParse::parseJson(int nFamily)
 {
 	ifstream ist("test.json");
 	for (char p; ist >> p;)
@@ -38,9 +37,11 @@ void JsonParse::parseJson()
 	cout << root["School"] << endl;
 
 	Json::Value family = root["family"];
-	cout << family[0].asString() << endl;
-	cout << family[1].asString() << endl;
-	cout << family[2].asString() << endl;
-	cout << family[3].asString() << endl;
+	for (int nIndex = 0; nIndex < nFamily; nIndex++)
+	{
+		cout << family[nIndex].asString() << endl;
+	}
 
+	system("pause");
+	return;
 }
