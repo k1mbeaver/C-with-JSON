@@ -44,17 +44,6 @@ char* Menu::returnSchool()
 	return chSchool;
 }
 
-int Menu::returnFamilyInt()
-{
-	int nCount;
-
-	cout << "가족 수를 입력하여 주세요( 본인 제외 ) : ";
-	cin >> nCount;
-	cout << endl;
-
-	return nCount;
-}
-
 char* Menu::returnFamilyChar()
 {
 	char* chFamily = NULL;
@@ -70,9 +59,11 @@ int Menu::selectMenu()
 {
 	int nSelect;
 
-	cout << "1. 입력" << endl;
-	cout << "2. 출력" << endl;
-	cout << "원하는 메뉴를 선택하여 주세요 : ";
+	cout << "1. 학생" << endl;
+	cout << "2. 교수" << endl;
+	cout << "3. 학교정보" << endl;
+	cout << "4. 종료" << endl;
+ 	cout << "원하는 메뉴를 선택하여 주세요 : ";
 	cin >> nSelect;
 
 	return nSelect;

@@ -5,11 +5,6 @@ int main()
 {
 	Menu mymenu;
 	JsonParse myJson;
-	char chName[10] = "\0";
-	int nAge;
-	char chAdress[10] = "\0";
-	char chSchool[10] = "\0";
-	int nFamily;
 	while (1)
 	{
 		system("cls");
@@ -17,18 +12,34 @@ int main()
 		nSelect = mymenu.selectMenu();
 		if (nSelect == 1)
 		{
-			myJson.makeJson();
+			system("cls");
+			myJson.parseJsonStudent();
+
 			continue;
 		}
 
 		else if (nSelect == 2)
 		{
 			system("cls");
-			int nFamily = mymenu.returnFamilyInt();
-			system("cls");
-			myJson.parseJson(nFamily);
+			myJson.parseJsonTeacher();
 
 			continue;
 		}
+
+		else if (nSelect == 3)
+		{
+			system("cls");
+			myJson.parseJsonSchool();
+
+			continue;
+		}
+
+		else if (nSelect == 4)
+		{
+			system("cls");
+			break;
+		}
 	}
+
+	return 0;
 }

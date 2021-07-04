@@ -18,5 +18,7 @@ public:
 	Menu mymenu;
 
 	void makeJson();
-	void parseJson(int nFamily);
+	void parseJsonStudent();
+	void parseJsonTeacher();
+	void parseJsonSchool();
 };

@@ -8,7 +8,6 @@ public:
 	int returnAge();
 	char* returnAdress();
 	char* returnSchool();
-	int returnFamilyInt();
 	char* returnFamilyChar();
 	int selectMenu();
 };
