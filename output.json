@@ -1,0 +1,50 @@
+{
+   "Line" : {
+      "width" : "---------------------------------------------------------------------------------------------------------------------"
+   },
+   "SchoolInformation" : [
+      {
+         "grade" : [
+            "4Grade",
+            "5Grade(the Department of Construction Engineering, the Department of Nursing Science)"
+         ],
+         "locate" : "JINJU",
+         "name" : "GNTECH",
+         "national/private" : "NATIONAL"
+      }
+   ],
+   "Student" : [
+      {
+         "School" : "GNTECH",
+         "address" : "KOR",
+         "age" : 22,
+         "family" : [ "FATHER", "MOTHER" ],
+         "name" : "KIM"
+      },
+      {
+         "School" : "GNTECH",
+         "address" : "JAP",
+         "age" : 23,
+         "family" : [ "FATHER", "MOTHER" ],
+         "name" : "HAN"
+      }
+   ],
+   "Teacher" : [
+      {
+         "Class" : "C++",
+         "Date" : "Wednesday",
+         "Point" : "3Point",
+         "major" : "major",
+         "name" : "KIM",
+         "room" : [ "101", "103" ]
+      },
+      {
+         "Class" : "Programming Language Theory",
+         "Date" : "Monday",
+         "Point" : "3Point",
+         "major" : "major",
+         "name" : "SONG",
+         "room" : [ "201", "203" ]
+      }
+   ]
+}

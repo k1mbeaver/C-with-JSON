@@ -63,6 +63,7 @@ int Menu::selectMenu()
 	cout << "2. 교수" << endl;
 	cout << "3. 학교정보" << endl;
 	cout << "4. 종료" << endl;
+	cout << "5. 정보입력" << endl;
  	cout << "원하는 메뉴를 선택하여 주세요 : ";
 	cin >> nSelect;
 

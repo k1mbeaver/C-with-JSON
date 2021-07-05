@@ -2,24 +2,25 @@
 
 void JsonParse::makeJson()
 {
-	root["name"] = "ksw";
-	root["age"] = 2;
-	root["address"] = "KOR";
-	root["School"] = "GnTEch";
-	family.append("Father");
-	family.append("Mother");
-	family.append("Sister");
-	family.append("Broter");
-	root["family"] = family;
+	std::ifstream json_file("test.json", std::ifstream::binary);
+	// 생성하면서 바로 path와 open mode를 parameter로 전달 가능
 
+	json_file.open("test.json", std::ifstream::in | std::ifstream::binary);
+	// 이처럼 open함수를 이용할 수 있으며, open mode는 | 연산자를 이용하여 여러 모드 가능
+
+	Json::Value root;
+	json_file >> root;
+	json_file.close();
+	// open한 file에서 얻어온 내용을 root에 대입하여 Json::Value로 사용
+
+	// 원하는 수정을 거친 후 formating json
+	Json::StyledWriter writer;
 	str = writer.write(root);
-	cout << str << endl;
 
-	ofstream ost("test.json");
-	ost << str;
-
-	getchar();
-	return;
+	// output to json file
+	std::ofstream output_file("output.json");
+	output_file << str;
+	output_file.close();
 }
 
 void JsonParse::parseJsonStudent()
@@ -30,6 +31,7 @@ void JsonParse::parseJsonStudent()
 
 	bool parsingRet = reader.parse(str, root);
 	Json::Value student = root["Student"];
+	Json::Value line = root["Line"];
 	for (int i = 0; i < 2; i++)
 	{
 		cout << "이름 : " << student[i]["name"].asString() << endl;
@@ -46,7 +48,7 @@ void JsonParse::parseJsonStudent()
 		}
 
 		cout << endl;
-		cout << root["Line"] << endl;
+		cout << line["width"].asString() << endl;
 	}
 	system("pause");
 	return;
@@ -60,6 +62,7 @@ void JsonParse::parseJsonTeacher()
 
 	bool parsingRet = reader.parse(str, root);
 	Json::Value teacher = root["Teacher"];
+	Json::Value line = root["Line"];
 
 	for (int i = 0; i < 2; i++)
 	{
@@ -79,7 +82,7 @@ void JsonParse::parseJsonTeacher()
 		}
 
 		cout << endl;
-		cout << root["Line"] << endl;
+		cout << line["width"].asString() << endl;
 	}
 	system("pause");
 	return;
@@ -93,6 +96,7 @@ void JsonParse::parseJsonSchool()
 
 	bool parsingRet = reader.parse(str, root);
 	Json::Value school = root["SchoolInformation"];
+	Json::Value line = root["Line"];
 
 	for (int i = 0; i < 1; i++)
 	{
@@ -110,7 +114,7 @@ void JsonParse::parseJsonSchool()
 		}
 
 		cout << endl;
-		cout << root["Line"] << endl;
+		cout << line["width"].asString() << endl;
 	}
 
 	system("pause");

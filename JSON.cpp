@@ -39,6 +39,13 @@ int main()
 			system("cls");
 			break;
 		}
+
+		else if (nSelect == 5)
+		{
+			system("cls");
+			myJson.makeJson();
+			break;
+		}
 	}
 
 	return 0;
