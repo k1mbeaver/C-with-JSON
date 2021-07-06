@@ -43,7 +43,7 @@ int main()
 		else if (nSelect == 5)
 		{
 			system("cls");
-			myJson.makeJson();
+			myJson.addStudent();
 			break;
 		}
 	}

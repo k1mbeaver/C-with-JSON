@@ -27,6 +27,13 @@
          "age" : 23,
          "family" : [ "FATHER", "MOTHER" ],
          "name" : "HAN"
+      },
+      {
+         "School" : "GNTECH",
+         "address" : "KOR",
+         "age" : 32,
+         "family" : [ "KIM", "HAN", "KIM", "KIM" ],
+         "name" : "CHOI"
       }
    ],
    "Teacher" : [

@@ -17,7 +17,7 @@ public:
 	Json::StyledWriter writer;
 	Menu mymenu;
 
-	void makeJson();
+	void addStudent();
 	void parseJsonStudent();
 	void parseJsonTeacher();
 	void parseJsonSchool();

@@ -1,7 +1,13 @@
 #include "JsonParse.h"
 
-void JsonParse::makeJson()
+void JsonParse::addStudent()
 {
+	char chName[10] = {"\0"};
+	char chSchool[10] = { "\0" };
+	char chAddress[10] = { "\0" };
+	int nAge = 0;
+	char chFamily[10] = { "\0" };
+	int nFamily = 0;
 	std::ifstream json_file("test.json", std::ifstream::binary);
 	// 생성하면서 바로 path와 open mode를 parameter로 전달 가능
 
@@ -12,6 +18,33 @@ void JsonParse::makeJson()
 	json_file >> root;
 	json_file.close();
 	// open한 file에서 얻어온 내용을 root에 대입하여 Json::Value로 사용
+
+	Json::Value student = root["Student"];
+	Json::Value add;
+	cout << "이름 : ";
+	cin >> chName;
+	add["name"] = chName;
+	cout << "학교 이름 : ";
+	cin >> chSchool;
+	add["School"] = chSchool;
+	cout << "나라 : ";
+	cin >> chAddress;
+	add["address"] = chAddress;
+	cout << "나이 : ";
+	cin >> nAge;
+	add["age"] = nAge;
+	Json::Value family;
+	cout << "가족의 수( 본인 제외 ) : ";
+	cin >> nFamily;
+	for (int nIndex = 0; nIndex < nFamily; nIndex++)
+	{
+		cout << "가족의 이름 : ";
+		cin >> chFamily;
+		family.append(chFamily);
+	}
+	add["family"] = family;
+	student.append(add);
+	root["Student"] = student;
 
 	// 원하는 수정을 거친 후 formating json
 	Json::StyledWriter writer;
