@@ -43,8 +43,24 @@ int main()
 		else if (nSelect == 5)
 		{
 			system("cls");
-			myJson.addStudent();
-			break;
+			int nAddSelect = 0;
+			nAddSelect = mymenu.selectAdd();
+			switch (nAddSelect)
+			{
+			case 1:
+				system("cls");
+				myJson.addStudent();
+				continue;
+			case 2:
+				system("cls");
+				myJson.addTeacher();
+				continue;
+			case 3:
+				system("cls");
+				myJson.addSchool();
+				continue;
+
+			}
 		}
 	}
 

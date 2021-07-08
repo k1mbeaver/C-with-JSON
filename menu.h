@@ -1,13 +1,13 @@
 #pragma once
 #include <iostream>
+#include "JsonParse.h"
 using namespace std;
 
 class Menu {
 public:
-	char* returnName();
-	int returnAge();
-	char* returnAdress();
-	char* returnSchool();
-	char* returnFamilyChar();
+	string str;
+	Json::Reader reader;
+	Json::Value root;
 	int selectMenu();
+	int selectAdd();
 };

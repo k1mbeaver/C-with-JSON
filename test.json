@@ -1,9 +1,130 @@
 {
-   "Student" : [ {"name" : "KIM", "School" : "GNTECH", "address" : "KOR", "age" : 22, "family" : [ "FATHER", "MOTHER" ]}, 
-{"name" : "HAN", "School" : "GNTECH", "address" : "JAP", "age" : 23, "family" : [ "FATHER", "MOTHER"]} ],
-   "Teacher" : [ {"name" : "KIM", "Class" : "C++", "Date" : "Wednesday", "Point" : "3Point", "major" : "major", "room" : [ "101", "103" ]}, 
-{"name" : "SONG", "Class" : "Programming Language Theory", "Date" : "Monday", "Point" : "3Point", "major" : "major", "room" : [ "201", "203" ]}  ],
-   "SchoolInformation" : [ {"name" : "GNTECH", "locate" : "JINJU", "national/private" : "NATIONAL", "grade" : [ "4Grade", "5Grade(the Department of Construction Engineering, the Department of Nursing Science)"] } ],
-   "Line" : {"width" : "---------------------------------------------------------------------------------------------------------------------"}
+   "AGE" : "< AGE > ( EXAMPLE : 23 ) : ",
+   "CLASSNAME" : "< CLASS NAME > ( EXAMPLE : C++PROGRAMMING ) : ",
+   "DATE" : "< DATE > ( EXAMPLE : WENDESDAY ) : ",
+   "GRADE" : " < GRADE > ( EXAMPLE : 4 ) : ",
+   "HOBBY" : "< HOBBY > ( EXAMPLE : SOCCER ) : ",
+   "LOCATE" : "< LOCATE > ( EXAMPLE : JINJU ) : ",
+   "Line" : {
+      "width" : "---------------------------------------------------------------------------------------------------------------------"
+   },
+   "MAJOR" : "< MAJOR > ( EXAMPLE : MAJOR or NON-MAJOR ) : ",
+   "NAME" : "< NAME > ( EXAMPLE : KIM ) : ",
+   "NATIONAL/PRIVATE" : " < NATIONAL/PRIVATE > ( EXAMPLE : NATIONAL ) : ",
+   "NATIONALITY" : "< NATIONALITY > ( EXAMPLE : KOREA ) : ",
+   "POINT" : "< HOW MANY POINTS? > ( EXAMPLE : 3 ) : ",
+   "ROOM" : "< ROOM NAME > ( EXAMPLE : 305 ) : ",
+   "SCHOOLNAME" : "< SCHOOL NAME > ( EXAMPLE : GNTECH ) : ",
+   "SchoolInformation" : [
+      {
+         "Grade" : 4,
+         "Locate" : "JINJU",
+         "Name" : "GNTECH",
+         "National/Private" : "NATIONAL"
+      },
+      {
+         "Grade" : 4,
+         "Locate" : "JINJU",
+         "Name" : "GNU",
+         "National/Private" : "NATIONAL"
+      },
+      {
+         "Grade" : 3,
+         "Locate" : "JINJU",
+         "Name" : "YONAM",
+         "National/Private" : "PRIVATE"
+      }
+   ],
+   "Student" : [
+      {
+         "Address" : "KOR",
+         "Age" : 22,
+         "Hobby" : "BASKETBALL",
+         "Name" : "KIM",
+         "School" : "GNTECH"
+      },
+      {
+         "Address" : "JAP",
+         "Age" : 23,
+         "Hobby" : "SOCCER",
+         "Name" : "HAN",
+         "School" : "GNTECH"
+      },
+      {
+         "Address" : "KOREA",
+         "Age" : 41,
+         "Hobby" : "BOOK",
+         "Name" : "PARK",
+         "School" : "GNTECH"
+      },
+      {
+         "Address" : "USA",
+         "Age" : 25,
+         "Hobby" : "SOCCER",
+         "Name" : "SONG",
+         "School" : "GNU"
+      }
+   ],
+   "Teacher" : [
+      {
+         "Class" : "C++",
+         "Date" : "Wednesday",
+         "Major" : "Major",
+         "Name" : "KIM",
+         "Point" : "3",
+         "Room" : "204"
+      },
+      {
+         "Class" : "Programming Language Theory",
+         "Date" : "Monday",
+         "Major" : "Major",
+         "Name" : "SONG",
+         "Point" : "3",
+         "Room" : "305"
+      },
+      {
+         "Class" : "C++",
+         "Date" : "WENDESDAY",
+         "Major" : "NON-MAJOR",
+         "Name" : "KIM",
+         "Point" : 3,
+         "Room" : "302"
+      },
+      {
+         "Class" : "PYTHON",
+         "Date" : "SUNDAY",
+         "Major" : "MAJOR",
+         "Name" : "PARK",
+         "Point" : 3,
+         "Room" : "102"
+      },
+      {
+         "Class" : "UNITY",
+         "Date" : "THURSDAY",
+         "Major" : "MAJOR",
+         "Name" : "MOON",
+         "Point" : 2,
+         "Room" : "205"
+      }
+   ],
+   "menuadd" : "5. < ADD INFORMATION >",
+   "menuedit" : "< SELECT THE ITEM TO BE EDITED > : ",
+   "menuexit" : "4. < EXIT >",
+   "menuschool" : "3. < SCHOOLS INFORMATION >",
+   "menuselect" : "< SELECT MENU >: ",
+   "menustudent" : "1. < STUDENTS INFORMATION >",
+   "menuteacher" : "2. < TEACHERS INFORMATION >",
+   "parseaddress" : "( ADDRESS ) : ",
+   "parseage" : "( AGE ) : ",
+   "parseclassname" : "( CLASS NAME ) : ",
+   "parsedate" : "( DATE ) : ",
+   "parsegrade" : "( GRADE ) : ",
+   "parsehobby" : "( HOBBY ) : ",
+   "parselocate" : "( LOCATE ) : ",
+   "parsemajor" : "( MAJOR / NON-MAJOR ) : ",
+   "parsename" : "( NAME ) : ",
+   "parsenational" : "( NATIONAL / PRIVATE ) : ",
+   "parsepoint" : "( POINT ) : ",
+   "parseroom" : "( ROOM ) : ",
+   "parseschool" : "( SCHOOL ) : "
 }
-
